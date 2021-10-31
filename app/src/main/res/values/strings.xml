@@ -7,4 +7,14 @@
     <string name="hamilton">Hamilton</string>
     <string name="location_options">Choose destination of cruise or travel agency</string>
     <string name="title_activity_toronto_map">TorontoMapActivity</string>
+
+    //strings for mapview
+    <string name="normal">Normal</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="satellite">Satellite</string>
+    <string name="terrain">Terrain</string>
+    <string name="lat_long_snippet">Lat: %1$.5f, Long:%2$.5f</string>
+    <string name="dropped_pin">Dropped pin</string>
+    <string name="poi">poi</string>
+
 </resources>
