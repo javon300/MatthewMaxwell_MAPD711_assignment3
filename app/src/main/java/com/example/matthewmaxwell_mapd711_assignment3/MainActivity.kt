@@ -1,5 +1,6 @@
 package com.example.matthewmaxwell_mapd711_assignment3
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -14,7 +15,9 @@ class MainActivity : AppCompatActivity() {
     //runs when button is pressed on main screen
     fun click(v: View){
         if (v.id==R.id.tvToronto) {
-            Toast.makeText(applicationContext, "toroonto's map now", Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext, "toronto's map now", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this@MainActivity,TorontoMapActivity::class.java)
+            startActivity(intent)
         }
         else if (v.id==R.id.tvMississauga) {
             Toast.makeText(this, "mississauga's map now", Toast.LENGTH_SHORT).show()
