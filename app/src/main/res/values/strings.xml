@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">matthewmaxwell_MAPD711_assignment3</string>
+    <string name="ny">New York</string>
+    <string name="toronto">Toronto</string>
+    <string name="mississauga">Mississauga</string>
+    <string name="oakville">Oakville</string>
+    <string name="hamilton">Hamilton</string>
+    <string name="location_options">Choose destination of cruise or travel agency</string>
+</resources>
