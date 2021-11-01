@@ -16,5 +16,9 @@
     <string name="lat_long_snippet">Lat: %1$.5f, Long:%2$.5f</string>
     <string name="dropped_pin">Dropped pin</string>
     <string name="poi">poi</string>
+    <string name="title_activity_ney_york_map">NeyYorkMapActivity</string>
+    <string name="title_activity_mississauga_map">MississaugaMapActivity</string>
+    <string name="title_activity_oakville_map">OakvilleMapActivity</string>
+    <string name="title_activity_hamilton_map">HamiltonMapActivity</string>
 
 </resources>

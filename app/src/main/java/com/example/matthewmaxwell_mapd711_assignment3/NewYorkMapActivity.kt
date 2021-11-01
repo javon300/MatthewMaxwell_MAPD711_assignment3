@@ -11,17 +11,17 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
-import com.example.matthewmaxwell_mapd711_assignment3.databinding.ActivityTorontoMapBinding
+import com.example.matthewmaxwell_mapd711_assignment3.databinding.ActivityNeyYorkMapBinding
 
-class TorontoMapActivity : AppCompatActivity(), OnMapReadyCallback {
+class NewYorkMapActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var map: GoogleMap
-    private lateinit var binding: ActivityTorontoMapBinding
+    private lateinit var binding: ActivityNeyYorkMapBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityTorontoMapBinding.inflate(layoutInflater)
+        binding = ActivityNeyYorkMapBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.

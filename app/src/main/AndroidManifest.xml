@@ -30,6 +30,22 @@
             android:value="@string/google_maps_key" />
 
         <activity
+            android:name=".HamiltonMapActivity"
+            android:exported="true"
+            android:label="@string/title_activity_hamilton_map" />
+        <activity
+            android:name=".OakvilleMapActivity"
+            android:exported="true"
+            android:label="@string/title_activity_oakville_map" />
+        <activity
+            android:name=".MississaugaMapActivity"
+            android:exported="true"
+            android:label="@string/title_activity_mississauga_map" />
+        <activity
+            android:name=".NewYorkMapActivity"
+            android:exported="true"
+            android:label="@string/title_activity_ney_york_map" />
+        <activity
             android:name=".TorontoMapActivity"
             android:exported="true"
             android:label="@string/title_activity_toronto_map" />

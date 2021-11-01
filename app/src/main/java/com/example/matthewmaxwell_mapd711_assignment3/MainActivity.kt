@@ -21,15 +21,23 @@ class MainActivity : AppCompatActivity() {
         }
         else if (v.id==R.id.tvMississauga) {
             Toast.makeText(this, "mississauga's map now", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this@MainActivity,MississaugaMapActivity::class.java)
+            startActivity(intent)
         }
         else if (v.id==R.id.tvOakville) {
             Toast.makeText(this, "oakville's map now", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this@MainActivity,OakvilleMapActivity::class.java)
+            startActivity(intent)
         }
         else if (v.id==R.id.tvHamilton) {
-            Toast.makeText(this, "hanilton's map now", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "hamilton's map now", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this@MainActivity,HamiltonMapActivity::class.java)
+            startActivity(intent)
         }
         else if (v.id==R.id.tvNewYork) {
             Toast.makeText(this, "new york's map now", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this@MainActivity,NewYorkMapActivity::class.java)
+            startActivity(intent)
         }
     }
 }
