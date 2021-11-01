@@ -40,19 +40,51 @@ class OakvilleMapActivity : AppCompatActivity(), OnMapReadyCallback {
      * installed Google Play services and returned to the app.
      */
     override fun onMapReady(googleMap: GoogleMap) {
+        // lion's vally park
         map = googleMap
-        val latitude = 43.78703
-        val longitude = -79.16009
+        val latitude = 43.4600
+        val longitude = -79.7485
         val officeLatLng = LatLng(latitude, longitude)
         val zoomLevel = 10f             //zoom level
+        //add marker to office location
+        map.addMarker(MarkerOptions().position(officeLatLng)
+            .title("Lion's Vally Park")
+            .snippet("phone:18008745674" + " address: 232 meadowvale rd, toronto" + " Cruzers cruises"))
+
+        //brontae heritage park
+        val latitude1 = 43.3959
+        val longitude1 = -79.7046
+        val latLng1 = LatLng(latitude1, longitude1)
+        map.addMarker(MarkerOptions().position(latLng1)
+            .title("Brontae Heritage Park")
+            .snippet("phone:18008745674" + " address: 232 meadowvale rd, toronto" + " Cruzers cruises"))
+
+        //Oakville lighthouse
+        val latitude2 = 43.4418
+        val longitude2 = -79.6695
+        val latLng2 = LatLng(latitude2, longitude2)
+        map.addMarker(MarkerOptions().position(latLng2)
+            .title("Oakville Lighthouse")
+            .snippet("phone:18008745674" + " address: 232 meadowvale rd, toronto" + " Cruzers cruises"))
+
+        //Film CA cinemas
+        val latitude3 = 43.4463
+        val longitude3 = -79.6902
+        val latLng3 = LatLng(latitude3, longitude3)
+        map.addMarker(MarkerOptions().position(latLng3)
+            .title("Film CA Cinemas")
+            .snippet("phone:18008745674" + " address: 232 meadowvale rd, toronto" + " Cruzers cruises"))
+
+        //Gairlach Gardens
+        val latitude4 = 43.4612
+        val longitude4 = -79.6484
+        val latLng4 = LatLng(latitude1, longitude2)
+        map.addMarker(MarkerOptions().position(latLng4)
+            .title("Gairlach Gardens")
+            .snippet("phone:18008745674" + " address: 232 meadowvale rd, toronto" + " Cruzers cruises"))
 
         //possition camera in area of home/cruise using latlng and zoom level
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(officeLatLng, zoomLevel))
-
-        //add marker to office location
-        map.addMarker(MarkerOptions().position(officeLatLng)
-            .title("Cruise Main Office")
-            .snippet("phone:18008745674" + " address: 232 meadowvale rd, toronto" + " Cruzers cruises"))
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

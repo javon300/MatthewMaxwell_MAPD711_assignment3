@@ -40,19 +40,51 @@ class TorontoMapActivity : AppCompatActivity(), OnMapReadyCallback {
      * installed Google Play services and returned to the app.
      */
     override fun onMapReady(googleMap: GoogleMap) {
+        // Royal ontario museum
         map = googleMap
-        val latitude = 43.78703
-        val longitude = -79.16009
+        val latitude = 43.67091
+        val longitude = -79.39464
         val officeLatLng = LatLng(latitude, longitude)
         val zoomLevel = 10f             //zoom level
+        //add marker to office location
+        map.addMarker(MarkerOptions().position(officeLatLng)
+            .title("Royal Ontarion Museum")
+            .snippet("phone:18008745674" + " address: 232 meadowvale rd, toronto" + " Cruzers cruises"))
+
+        //high park
+        val latitude1 = 43.64750
+        val longitude1 = -79.46359
+        val latLng1 = LatLng(latitude1, longitude1)
+        map.addMarker(MarkerOptions().position(latLng1)
+            .title("High Park")
+            .snippet("phone:18008745674" + " address: 232 meadowvale rd, toronto" + " Cruzers cruises"))
+
+        //casa loma museum
+        val latitude2 = 43.68088
+        val longitude2 = -79.40923
+        val latLng2 = LatLng(latitude2, longitude2)
+        map.addMarker(MarkerOptions().position(latLng2)
+            .title("Casa Loma Museum")
+            .snippet("phone:18008745674" + " address: 232 meadowvale rd, toronto" + " Cruzers cruises"))
+
+        //the haunted walk of toronto
+        val latitude3 = 43.65091
+        val longitude3 = -79.36035
+        val latLng3 = LatLng(latitude3, longitude3)
+        map.addMarker(MarkerOptions().position(latLng3)
+            .title("The Haunted Walk of Toronto")
+            .snippet("phone:18008745674" + " address: 232 meadowvale rd, toronto" + " Cruzers cruises"))
+
+        //allen garden
+        val latitude4 = 43.66300
+        val longitude4 = -79.37509
+        val latLng4 = LatLng(latitude1, longitude2)
+        map.addMarker(MarkerOptions().position(latLng4)
+            .title("Allen Gardens")
+            .snippet("phone:18008745674" + " address: 232 meadowvale rd, toronto" + " Cruzers cruises"))
 
         //possition camera in area of home/cruise using latlng and zoom level
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(officeLatLng, zoomLevel))
-
-        //add marker to office location
-        map.addMarker(MarkerOptions().position(officeLatLng)
-            .title("Cruise Main Office")
-            .snippet("phone:18008745674" + " address: 232 meadowvale rd, toronto" + " Cruzers cruises"))
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

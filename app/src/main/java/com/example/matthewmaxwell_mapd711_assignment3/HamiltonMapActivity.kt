@@ -40,19 +40,51 @@ class HamiltonMapActivity : AppCompatActivity(), OnMapReadyCallback {
      * installed Google Play services and returned to the app.
      */
     override fun onMapReady(googleMap: GoogleMap) {
+        // location 1, art gallery of hamilton
         map = googleMap
-        val latitude = 43.78703
-        val longitude = -79.16009
+        val latitude = 43.25753
+        val longitude = -79.87162
         val officeLatLng = LatLng(latitude, longitude)
         val zoomLevel = 10f             //zoom level
-
-        //possition camera in area of home/cruise using latlng and zoom level
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(officeLatLng, zoomLevel))
-
         //add marker to office location
         map.addMarker(MarkerOptions().position(officeLatLng)
             .title("Cruise Main Office")
             .snippet("phone:18008745674" + " address: 232 meadowvale rd, toronto" + " Cruzers cruises"))
+
+        // main location in city
+        val latitude1 = 43.348331
+        val longitude1 = -79.774097
+        val latLng1 = LatLng(latitude1, longitude1)
+        map.addMarker(MarkerOptions().position(latLng1)
+            .title("Cruise Main Office")
+            .snippet("phone:18008745674" + " address: 232 meadowvale rd, toronto" + " Cruzers cruises"))
+
+        //location2, spencer jeorge wilderness
+        val latitude2 = 43.28287
+        val longitude2 = -79.97869
+        val latLng2 = LatLng(latitude2, longitude2)
+        map.addMarker(MarkerOptions().position(latLng2)
+            .title("spencer jeorge wilderness")
+            .snippet("phone:18008745674" + " address: 232 meadowvale rd, toronto" + " Cruzers cruises"))
+
+        //childrens museum
+        val latitude3 = 43.24728
+        val longitude3 = -79.81601
+        val latLng3 = LatLng(latitude3, longitude3)
+        map.addMarker(MarkerOptions().position(latLng3)
+            .title("Childrens' museum")
+            .snippet("phone:18008745674" + " address: 232 meadowvale rd, toronto" + " Cruzers cruises"))
+
+        //ireland house museum
+        val latitude4 = 43.36782
+        val longitude4 = -79.82691
+        val latLng4 = LatLng(latitude1, longitude2)
+        map.addMarker(MarkerOptions().position(latLng4)
+            .title("Ireland House Museum")
+            .snippet("phone:18008745674" + " address: 232 meadowvale rd, toronto" + " Cruzers cruises"))
+
+        //possition camera in area of home/cruise using latlng and zoom level
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(officeLatLng, zoomLevel))
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
